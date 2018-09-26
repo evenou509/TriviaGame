@@ -1,0 +1,34 @@
+body {
+    background-image: url(../images/newlogo.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+#header {
+  text-align: center;
+  color: white;  
+}
+
+button {
+    /* position: absolute; */
+}
+
+#start {
+    color: rgb(94, 91, 91);
+    background-color: blue;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+    align-items: center;
+    /* position: center; */
+}
+
+#wrapper {
+    text-align: center;
+    color: rgb(9, 196, 9);
+
+}
+
+#display {
+    padding: 10px;
+}
