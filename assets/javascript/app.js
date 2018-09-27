@@ -58,7 +58,7 @@ $(document).on('click', '#submit', function(){
 var newGame = {
     right: 0,
     wrong: 0,
-    counter: 100,
+    counter: 20,
     // function need to move
     // $("#submit").hide();
     
@@ -69,15 +69,15 @@ var newGame = {
 
         // to set up the timer inside of the start function
         timer = setInterval(newGame.countdown, 1000);
-        $("#display").prepend('Time Remaining: <span id="counter">100</span> seconds');
+        $("#display").prepend('<h2>Time Remaining: <span id="counter">100</span> seconds </h2>');
         for (var i = 0; i < questions.length; i++){
             $("#display").append('<h4>' + questions[i].question + '</h4>')
             for (var j = 0; j < questions[i].answers.length; j++){
                 $("#display").append("<input type='radio' name='question "+ i +"' value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
             }
         }
-        // creater a new button for to su
-        // $("display").append('<br><button id="submit">Submit</button>')
+        // creater a new button for to submition
+        $("#display").append('<br><button id="submit">Submit</button>')
     },
 
 
@@ -169,10 +169,10 @@ var newGame = {
         clearInterval(timer);
         $("#display h2").remove();
 
-        $("#display").html("All Over");
-        $("#display").append("Right Answers: " + this.right);
-        $("#display").append("Wrong Answers: " + this.wrong);
-        $("#display").append("Unanswered: " + (questions.length-(this.wrong + this.right)));
+        $("#display").html("<h2>All Over!</h2>");
+        $("#display").append("<h3>Right Answers: " + this.right + "</h3>");
+        $("#display").append("<h3>Wrong Answers: " + this.wrong + "</h3>");
+        $("#display").append("<h3>Unanswered: " + (questions.length-(this.wrong + this.right)) + "</h3>");
     }
 
 
