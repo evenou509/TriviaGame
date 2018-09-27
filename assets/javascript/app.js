@@ -3,22 +3,18 @@ var questions = [{
     question: "What team won the very first NBA game?",
     answers: ["NEW YORK KNICKS", "PHILADELPHIA WARRIORS", "TORONTO HUSKIES", "CHICAGO STAGS"],
     rightAnswer: "NEW YORK KNICKS",
-    // image: "assets/images/New-York-Knicks.jpg",
 }, {
     question: "Who was the first player in NBA history to be elected league MVP by a unanimous vote?",
     answers: ["LEBRON JAMES", "STEPHEN CURRY", "MAGIC JOHNSON", "MICHAEL JORDAN"],
     rightAnswer: "STEPHEN CURRY",
-    // image: "assets/images/New-York-Knicks.jpg", 
 }, {
     question: "Who scored the first three-point basket in NBA history?",
     answers: ["WES UNSELD", "GENE STUMP", "CHRIS FORD", "LARRY BIRD"],
     rightAnswer: "CHRIS FORD",
-    // image: "assets/images/New-York-Knicks.jpg",
 }, {
     question: "Who was the youngest player to score 10,000 points in the NBA?",
     answers: ["MICHAEL JORDAN", "LEBRON JAMES", "KOBE BRYANT", "WILT CHAMBERLAIN"],
     rightAnswer: "LEBRON JAMES",
-    // image: "assets/images/New-York-Knicks.jpg",
 }, {
     question: "What team owns the longest winning streak in NBA history?",
     answers: ["LOS ANGELES LAKES", "MIAMI HEAT", "CHICAGO BULLS", "GOLDEN STATE WARRIORS"],
@@ -59,9 +55,8 @@ var newGame = {
     right: 0,
     wrong: 0,
     counter: 20,
-    // function need to move
-    // $("#submit").hide();
-    
+
+    //the start function game 
     start: function(){
         // to remove the start button
         $("#start").hide();
@@ -80,7 +75,7 @@ var newGame = {
         $("#display").append('<br><button id="submit">Submit</button>')
     },
 
-
+    // countdown functe for the timer 
     countdown: function(){
         newGame.counter--;
         $("#counter").html(newGame.counter);
