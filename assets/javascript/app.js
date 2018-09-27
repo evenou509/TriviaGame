@@ -54,7 +54,7 @@ $(document).on('click', '#submit', function(){
 var newGame = {
     right: 0,
     wrong: 0,
-    counter: 20,
+    counter: 100,
 
     //the start function game 
     start: function(){
@@ -68,11 +68,11 @@ var newGame = {
         for (var i = 0; i < questions.length; i++){
             $("#display").append('<h4>' + questions[i].question + '</h4>')
             for (var j = 0; j < questions[i].answers.length; j++){
-                $("#display").append("<input type='radio' name='question "+ i +"' value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
+                $("#display").append("<br><input type='radio' name='question "+ i +"' value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
             }
         }
         // creater a new button for to submition
-        $("#display").append('<br><button id="submit">Submit</button>')
+        $("#display").append('<br> <br><button id="submit">Submit</button>')
     },
 
     // countdown functe for the timer 

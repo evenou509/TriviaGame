@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/ball.jpg);
+    background-image: url(../images/ball1.jpg);
     background-repeat: no-repeat; 
     /* background-position: center; */
     background-size: cover; 
@@ -11,13 +11,11 @@ body {
   margin-top: 100px;  
 }
 
-button {
-    /* position: absolute; */
-}
+
 
 #start {
     color: black;
-    background-color: orangered;
+    background-color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 2px;
     align-items: center;
@@ -26,7 +24,8 @@ button {
 
 #wrapper {
     text-align: center;
-    color:orangered;
+    color: orangered;
+    padding: 20px;
 
 }
 
